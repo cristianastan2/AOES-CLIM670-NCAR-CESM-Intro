@@ -88,9 +88,17 @@ Build the executable (this will take while)
 $ qcmd -- ./case.build
 ~~~
 {: .language-bash}
-
 This will take awhile.  While the model is compiling, we will talk about what the `create_newcase` command did.
 
+> ## Some Potential Errors {.callout}
+>
+> Some users received an error indicating that their account was overspent. To resolve this, set the `PBS_ACCOUNT` environment variable
+>~~~
+>$ export PBS_ACCOUNT=UGMU0032
+>~~~
+>{: .language-bash} 
+> 
+{.callout}
 
 #### What did we just do?
 
@@ -202,4 +210,5 @@ $ qstat -u username
 
 What do we see regarding the model run in the queue?
 
-While we are away, our model will run.  We will return next week to take a look!
+You can logout now.  While we are away, our model will run.  We will return next week to take a look!
+

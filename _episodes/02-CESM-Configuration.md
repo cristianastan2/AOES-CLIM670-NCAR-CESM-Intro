@@ -8,7 +8,7 @@ objectives:
 keypoints:
 ---
 
-The NCAR/CESM consists of many component models which are their own software programs.  These models talk to each other through another piece of software called a coupler. There is yet even another software system, called the Workflow.  It allows use to select various model components and configurations for our experiments. 
+The NCAR/CESM consists of many component models which are their own software programs.  These models talk to each other through another piece of software called a coupler. There is yet even another software system, called the Workflow.  It allows us to select various model components and configurations for our experiments. 
 
 ![CESMCoupling](../fig/CESMCoupling.png) 
 
