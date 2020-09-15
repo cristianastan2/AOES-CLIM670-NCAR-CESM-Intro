@@ -90,7 +90,7 @@ $ qcmd -- ./case.build
 {: .language-bash}
 This will take awhile.  While the model is compiling, we will talk about what the `create_newcase` command did.
 
-> ## Some Potential Errors {.callout}
+> ## Some Potential Errors
 >
 > Some users received an error indicating that their account was overspent. To resolve this, set the `PBS_ACCOUNT` environment variable
 >~~~
