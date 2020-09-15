@@ -93,10 +93,10 @@ This will take awhile.  While the model is compiling, we will talk about what th
 > ## Some Potential Errors
 >
 > Some users received an error indicating that their account was overspent. To resolve this, set the `PBS_ACCOUNT` environment variable
->~~~
->$ export PBS_ACCOUNT=UGMU0032
->~~~
->{: .language-bash} 
+> ~~~
+> $ export PBS_ACCOUNT=UGMU0032
+> ~~~
+> {: .language-bash} 
 >
 {.callout}
 
