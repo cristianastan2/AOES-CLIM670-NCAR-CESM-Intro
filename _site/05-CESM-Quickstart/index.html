@@ -19,7 +19,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta http-equiv="last-modified" content="2020-09-14 18:57:32 -0600">
+    <meta http-equiv="last-modified" content="2020-09-15 16:03:29 -0600">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- meta "search-domain" used for google site search function google_search() -->
     <meta name="search-domain" value="">
@@ -354,7 +354,7 @@ Why do you think we would put something like this in our home directory?</p>
 </code></pre></div></div>
 
 <p>Create a new case</p>
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>./create_newcase <span class="nt">--</span> ~/cases/b.day1.0 <span class="nt">--res</span> f19_g17 <span class="nt">--compset</span> B1850 <span class="nt">--project</span> UGMU0032
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>./create_newcase <span class="nt">--cases</span> ~/cases/b.day1.0 <span class="nt">--res</span> f19_g17 <span class="nt">--compset</span> B1850 <span class="nt">--project</span> UGMU0032
 </code></pre></div></div>
 
 <p>This created a new subdirectory for your new case. Change to that directory.</p>
@@ -366,10 +366,20 @@ Why do you think we would put something like this in our home directory?</p>
 </code></pre></div></div>
 
 <p>Build the executable (this will take while)</p>
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>qcmd <span class="nt">--</span>./case.build
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>qcmd <span class="nt">--</span> ./case.build
 </code></pre></div></div>
 
 <p>This will take awhile.  While the model is compiling, we will talk about what the <code class="language-plaintext highlighter-rouge">create_newcase</code> command did.</p>
+
+<blockquote class="callout">
+  <h2 id="potential-errors">Potential Errors</h2>
+
+  <p>Some users received an error indicating that their account was overspent or expired. This happened to users who already had a NCAR account associated with a project charge code that was no longer available.  To resolve this, set the <code class="language-plaintext highlighter-rouge">PBS_ACCOUNT</code> environment variable to a valid charge code for this class.</p>
+  <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">export </span><span class="nv">PBS_ACCOUNT</span><span class="o">=</span>UGMU0032
+</code></pre></div>  </div>
+  <p>This setting will go away after you logout, so you will need to set it everytime for the correct project charge code associated with the project you are working on.</p>
+
+</blockquote>
 
 <h4 id="what-did-we-just-do">What did we just do?</h4>
 
@@ -462,7 +472,7 @@ $ ls
 </ul>
 
 <h3 id="how-can-i-find-out-what-my-caseroot-cimeroot-etc-are-if-i-forget">How can I find out what my CASEROOT, CIMEROOT, etc. are if I forget?</h3>
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>./xmlquery RUNDIR, EXEROOT, CASEROOT, CIMEROOT
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>./xmlquery RUNDIR,EXEROOT,CASEROOT,CIMEROOT
 </code></pre></div></div>
 
 <h3 id="now-what">Now what?</h3>
@@ -477,7 +487,8 @@ $ ls
 
 <p>What do we see regarding the model run in the queue?</p>
 
-<p>While we are away, our model will run.  We will return next week to take a look!</p>
+<p>You can logout now.  While we are away, our model will run.  We will return next week to take a look!</p>
+
 
 
 

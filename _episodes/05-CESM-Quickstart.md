@@ -88,17 +88,20 @@ Build the executable (this will take while)
 $ qcmd -- ./case.build
 ~~~
 {: .language-bash}
+
 This will take awhile.  While the model is compiling, we will talk about what the `create_newcase` command did.
 
-> ## Some Potential Errors
+
+> ## Potential Errors
 >
-> Some users received an error indicating that their account was overspent. To resolve this, set the `PBS_ACCOUNT` environment variable
+> Some users received an error indicating that their account was overspent or expired. This happened to users who already had a NCAR account associated with a project charge code that was no longer available.  To resolve this, set the `PBS_ACCOUNT` environment variable to a valid charge code for this class.
 > ~~~
 > $ export PBS_ACCOUNT=UGMU0032
 > ~~~
-> {: .language-bash} 
+> {: .language-bash}
+> This setting will go away after you logout, so you will need to set it everytime for the correct project charge code associated with the project you are working on. 
 >
-{.callout}
+{: .callout}
 
 #### What did we just do?
 

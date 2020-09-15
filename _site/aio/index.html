@@ -19,7 +19,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta http-equiv="last-modified" content="2020-09-14 18:57:32 -0600">
+    <meta http-equiv="last-modified" content="2020-09-15 16:03:29 -0600">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- meta "search-domain" used for google site search function google_search() -->
     <meta name="search-domain" value="">
@@ -251,16 +251,17 @@
 
 </blockquote>
 
-<p>Last week you learned about the NOAA/Unified Forecast System from Dr. Stan.  Today we will learn about the NCAR/Community Earth System Model. How would you know which model you want to yuse for your work?  Here are some pros/cons of each model?</p>
+<p>Last week you learned about the NOAA/Unified Forecast System from Dr. Stan.  Today we will learn about the NCAR/Community Earth System Model. How would you know which model you want to use for your work?  Here are some pros/cons of each model.</p>
 
 <h3 id="noaaunified-forecast-system-ufs">NOAA/Unified Forecast System (UFS) </h3>
 <ul>
+  <li>Website: https://www.ufscommunity.org/</li>
   <li>UFS is not yet easy to run for research purposes</li>
   <li>Challenging to modify for a specific purpose, but this will improve in the future – concerted effort to document and provide community support</li>
   <li>The “public release” version is only the Atm &amp; Land components, although experimental unsupported atm-land-ocn versions exist.</li>
   <li>Existing, publicly available experiments consist of Atm/Land model re-forecasts and real-time forecasts</li>
   <li>Its primary mission is centered around prediction</li>
-  <li>Componenets consist of Atm, Land, Ocn, Sea Ic, Aerosol, Ionosphere, Storm Surge, Waves</li>
+  <li>Components consist of Atm, Land, Ocn, Sea Ic, Aerosol, Ionosphere, Storm Surge, Waves</li>
   <li>Using the UFS for research has the potential to directly feedback to improving operational predictions.</li>
   <li>Several people in AOES work with this model as a research tool (e.g. Stan, Cash, Kinter)</li>
 </ul>
@@ -270,8 +271,8 @@
 <h3 id="ncarcommunity-earth-system-model-cesm">NCAR/Community Earth System Model (CESM)</h3>
 <ul>
   <li>Designed for community use – easy to use for research</li>
-  <li>Large community of people working with CESM – Organized in working groups (open to all) http://www.cesm.ucar.edu/working_groups/</li>
-  <li>Easy to get help, lots of documentation: http://www.cesm.ucar.edu/</li>
+  <li>Large community of people working with CESM – Organized in working groups that are open to all (http://www.cesm.ucar.edu/working_groups/)</li>
+  <li>Easy to get help, lots of documentation: (http://www.cesm.ucar.edu/)</li>
   <li>CESM has different (and more) Earth system components</li>
   <li>Many components can be combined together in endless combinations</li>
   <li>Easy to change configuration (e.g. output frequency, grid).</li>
@@ -330,7 +331,7 @@
 
 </blockquote>
 
-<p>The NCAR/CESM consists of many component models which are their own software programs.  These models talk to each other through another piece of software called a coupler. There is yet even another software system, called the Workflow.  It allows use to select various model components and configurations for our experiments.</p>
+<p>The NCAR/CESM consists of many component models which are their own software programs.  These models talk to each other through another piece of software called a coupler. There is yet even another software system, called the Workflow.  It allows us to select various model components and configurations for our experiments.</p>
 
 <p><img src="../fig/CESMCoupling.png" alt="CESMCoupling" /></p>
 
@@ -411,7 +412,7 @@
 
 </blockquote>
 
-<p>To run a model we will need disk space beyond just our home directory.  By default, with your NCAR account, you have space in your home directory, a temporary space called <code class="language-plaintext highlighter-rouge">/scratch</code> and a <code class="language-plaintext highlighter-rouge">work</code> directory all under a system called the GLADE shared file system.  How do I know what directories I have and how much space is available?</p>
+<p>To run a model we will need disk space beyond just our home directory.  By default, with your NCAR account, you have space in your home directory, a temporary space called <code class="language-plaintext highlighter-rouge">scratch</code> and a <code class="language-plaintext highlighter-rouge">work</code> directory all under a system called the GLADE shared file system.  How do I know what directories I have and how much space is available?</p>
 
 <blockquote class="challenge">
   <h2 id="your-disk-space-on-glade">Your disk space on glade</h2>
@@ -475,7 +476,7 @@
 </code></pre></div></div>
 
 <p>Download the CESM from Github</p>
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>git clone –b release-cesm2.1.1 https://github.com/ESCOMP/cesm.git cesm2.1.1 
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>git clone <span class="nt">-b</span> release-cesm2.1.1 https://github.com/ESCOMP/cesm.git cesm2.1.1 
 </code></pre></div></div>
 
 <p>Change to the <code class="language-plaintext highlighter-rouge">cesm2.1.1</code> directory</p>
@@ -591,7 +592,7 @@ Why do you think we would put something like this in our home directory?</p>
 </code></pre></div></div>
 
 <p>Create a new case</p>
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>./create_newcase <span class="nt">--</span> ~/cases/b.day1.0 <span class="nt">--res</span> f19_g17 <span class="nt">--compset</span> B1850 <span class="nt">--project</span> UGMU0032
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>./create_newcase <span class="nt">--cases</span> ~/cases/b.day1.0 <span class="nt">--res</span> f19_g17 <span class="nt">--compset</span> B1850 <span class="nt">--project</span> UGMU0032
 </code></pre></div></div>
 
 <p>This created a new subdirectory for your new case. Change to that directory.</p>
@@ -603,10 +604,20 @@ Why do you think we would put something like this in our home directory?</p>
 </code></pre></div></div>
 
 <p>Build the executable (this will take while)</p>
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>qcmd <span class="nt">--</span>./case.build
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>qcmd <span class="nt">--</span> ./case.build
 </code></pre></div></div>
 
 <p>This will take awhile.  While the model is compiling, we will talk about what the <code class="language-plaintext highlighter-rouge">create_newcase</code> command did.</p>
+
+<blockquote class="callout">
+  <h2 id="potential-errors">Potential Errors</h2>
+
+  <p>Some users received an error indicating that their account was overspent or expired. This happened to users who already had a NCAR account associated with a project charge code that was no longer available.  To resolve this, set the <code class="language-plaintext highlighter-rouge">PBS_ACCOUNT</code> environment variable to a valid charge code for this class.</p>
+  <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">export </span><span class="nv">PBS_ACCOUNT</span><span class="o">=</span>UGMU0032
+</code></pre></div>  </div>
+  <p>This setting will go away after you logout, so you will need to set it everytime for the correct project charge code associated with the project you are working on.</p>
+
+</blockquote>
 
 <h4 id="what-did-we-just-do">What did we just do?</h4>
 
@@ -699,7 +710,7 @@ $ ls
 </ul>
 
 <h3 id="how-can-i-find-out-what-my-caseroot-cimeroot-etc-are-if-i-forget">How can I find out what my CASEROOT, CIMEROOT, etc. are if I forget?</h3>
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>./xmlquery RUNDIR, EXEROOT, CASEROOT, CIMEROOT
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>./xmlquery RUNDIR,EXEROOT,CASEROOT,CIMEROOT
 </code></pre></div></div>
 
 <h3 id="now-what">Now what?</h3>
@@ -714,7 +725,7 @@ $ ls
 
 <p>What do we see regarding the model run in the queue?</p>
 
-<p>While we are away, our model will run.  We will return next week to take a look!</p>
+<p>You can logout now.  While we are away, our model will run.  We will return next week to take a look!</p>
 
 <blockquote class="keypoints">
   <h2>Key Points</h2>
