@@ -67,7 +67,7 @@ $ cd /glade/work/kpegion/cesm2.1.1/cime/scripts
 
 Create a new case
 ~~~
-$ ./create_newcase -- ~/cases/b.day1.0 --res f19_g17 --compset B1850 --project UGMU0032
+$ ./create_newcase --cases ~/cases/b.day1.0 --res f19_g17 --compset B1850 --project UGMU0032
 ~~~
 {: .language-bash}
 
@@ -85,7 +85,7 @@ $ ./case_setup
 
 Build the executable (this will take while)
 ~~~
-$ qcmd --./case.build
+$ qcmd -- ./case.build
 ~~~
 {: .language-bash}
 
@@ -182,7 +182,7 @@ It contains a bunch of `.xml` files which are configuration files.  We will lear
 
 ### How can I find out what my CASEROOT, CIMEROOT, etc. are if I forget?
 ~~~
-$ ./xmlquery RUNDIR, EXEROOT, CASEROOT, CIMEROOT
+$ ./xmlquery RUNDIR,EXEROOT,CASEROOT,CIMEROOT
 ~~~
 {: .language-bash}
 

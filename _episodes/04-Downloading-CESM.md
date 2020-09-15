@@ -18,7 +18,7 @@ $ cd /glade/work/kpegion
 
 Download the CESM from Github
 ~~~
-$ git clone –b release-cesm2.1.1 https://github.com/ESCOMP/cesm.git cesm2.1.1 
+$ git clone -b release-cesm2.1.1 https://github.com/ESCOMP/cesm.git cesm2.1.1 
 ~~~
 {: .language-bash}
 

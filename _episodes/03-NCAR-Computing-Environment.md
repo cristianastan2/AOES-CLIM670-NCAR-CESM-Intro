@@ -29,7 +29,7 @@ Cheyenne is a supercomputer, but to the user it is just like any Unix computer a
 >
 {: .challenge}
 
-To run a model we will need disk space beyond just our home directory.  By default, with your NCAR account, you have space in your home directory, a temporary space called `/scratch` and a `work` directory all under a system called the GLADE shared file system.  How do I know what directories I have and how much space is available?
+To run a model we will need disk space beyond just our home directory.  By default, with your NCAR account, you have space in your home directory, a temporary space called `scratch` and a `work` directory all under a system called the GLADE shared file system.  How do I know what directories I have and how much space is available?
 
 > ## Your disk space on glade  
 >

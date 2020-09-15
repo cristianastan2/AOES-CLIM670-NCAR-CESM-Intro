@@ -14,7 +14,8 @@ keypoints:
 Last week you learned about the NOAA/Unified Forecast System from Dr. Stan.  Today we will learn about the NCAR/Community Earth System Model. How would you know which model you want to yuse for your work?  Here are some pros/cons of each model?
 
 ### NOAA/Unified Forecast System (UFS) 
-* UFS is not yet easy to run for research purposes 
+*  Website: https://www.ufscommunity.org/
+*  UFS is not yet easy to run for research purposes 
 * Challenging to modify for a specific purpose, but this will improve in the future – concerted effort to document and provide community support 
 * The "public release" version is only the Atm & Land components, although experimental unsupported atm-land-ocn versions exist.
 * Existing, publicly available experiments consist of Atm/Land model re-forecasts and real-time forecasts 
