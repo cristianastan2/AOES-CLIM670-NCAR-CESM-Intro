@@ -64,7 +64,7 @@
 	<![endif]-->
 
   <title>
-  About &ndash; NCAR and CESM Introduction
+  CESM Workflow &ndash; NCAR and CESM Introduction
   </title>  
 
   </head>
@@ -198,14 +198,198 @@
 
 
 
-<h1 class="maintitle"><a href="../index.html">NCAR and CESM Introduction</a>: About</h1>
 
 
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+<div class="row">
+  <div class="col-xs-1">
+    <h3 class="text-left">
+      
+      <a href="../01-Two-Models/index.html"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span><span class="sr-only">previous episode</span></a>
+      
+    </h3>
+  </div>
+  <div class="col-xs-10">
+    
+    <h3 class="maintitle"><a href="../">NCAR and CESM Introduction</a></h3>
+    
+  </div>
+  <div class="col-xs-1">
+    <h3 class="text-right">
+      
+      <a href="../03-NCAR-Computing-Environment/index.html"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span><span class="sr-only">next episode</span></a>
+      
+    </h3>
+  </div>
+</div>
 
 <article>
+<div class="row">
+  <div class="col-md-1">
+  </div>
+  <div class="col-md-10">
+    <h1 class="maintitle">CESM Workflow</h1>
+  </div>
+  <div class="col-md-1">
+  </div>
+</div>
 
+
+
+
+
+
+
+
+
+
+
+
+<blockquote class="objectives">
+  <h2>Overview</h2>
+
+  <div class="row">
+    <div class="col-md-3">
+      <strong>Teaching:</strong> 0 min
+      <br/>
+      <strong>Exercises:</strong> 0 min
+    </div>
+    <div class="col-md-9">
+      <strong>Questions</strong>
+      <ul>
+	
+	<li><p>What is the CESM Workflow?</p>
+</li>
+	
+      </ul>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-3">
+    </div>
+    <div class="col-md-9">
+      <strong>Objectives</strong>
+      <ul>
+	
+      </ul>
+    </div>
+  </div>
+
+</blockquote>
+
+<p>The NCAR/CESM consists of many component models which are their own software programs.  These models talk to each other through another piece of software called a coupler. There is yet even another software system, called the Workflow.  It allows use to select various model components and configurations for our experiments.</p>
+
+<p><img src="../fig/CESMCoupling.png" alt="CESMCoupling" /></p>
+
+<h3 id="workflow">Workflow</h3>
+
+<p>The workflow used by CESM is called the Coupling Infrastructure for Modeling Earth (CIME).  It includes:</p>
+<ul>
+  <li>Coupling infrastructure (how do the components talk to each other)</li>
+  <li>Data and stub models (structure to allow componenets to be active or inactive)</li>
+  <li>Testing infrastructure</li>
+  <li>Python scripts and XML configuration files for the Case control system (this is what is important to us for running the model)</li>
+</ul>
+
+<p><img src="../fig/CIME.png" alt="CIME" /></p>
+
+<p>CIME is being used by other modeling groups, so learning how to configure and run the CESM using CIME may translate to being able to work with other models.</p>
+
+
+
+
+
+<blockquote class="keypoints">
+  <h2>Key Points</h2>
+  <ul>
+    
+  </ul>
+</blockquote>
 
 </article>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+<div class="row">
+  <div class="col-xs-1">
+    <h3 class="text-left">
+      
+      <a href="../01-Two-Models/index.html"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span><span class="sr-only">previous episode</span></a>
+      
+    </h3>
+  </div>
+  <div class="col-xs-10">
+    
+  </div>
+  <div class="col-xs-1">
+    <h3 class="text-right">
+      
+      <a href="../03-NCAR-Computing-Environment/index.html"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span><span class="sr-only">next episode</span></a>
+      
+    </h3>
+  </div>
+</div>
+
 
       
       

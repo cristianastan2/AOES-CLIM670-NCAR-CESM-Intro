@@ -64,7 +64,7 @@
 	<![endif]-->
 
   <title>
-  About &ndash; NCAR and CESM Introduction
+  Downloading CESM &ndash; NCAR and CESM Introduction
   </title>  
 
   </head>
@@ -198,14 +198,205 @@
 
 
 
-<h1 class="maintitle"><a href="../index.html">NCAR and CESM Introduction</a>: About</h1>
 
 
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+<div class="row">
+  <div class="col-xs-1">
+    <h3 class="text-left">
+      
+      <a href="../03-NCAR-Computing-Environment/index.html"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span><span class="sr-only">previous episode</span></a>
+      
+    </h3>
+  </div>
+  <div class="col-xs-10">
+    
+    <h3 class="maintitle"><a href="../">NCAR and CESM Introduction</a></h3>
+    
+  </div>
+  <div class="col-xs-1">
+    <h3 class="text-right">
+      
+      <a href="../05-CESM-Quickstart/index.html"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span><span class="sr-only">next episode</span></a>
+      
+    </h3>
+  </div>
+</div>
 
 <article>
+<div class="row">
+  <div class="col-md-1">
+  </div>
+  <div class="col-md-10">
+    <h1 class="maintitle">Downloading CESM</h1>
+  </div>
+  <div class="col-md-1">
+  </div>
+</div>
 
+
+
+
+
+
+
+
+
+
+
+
+<blockquote class="objectives">
+  <h2>Overview</h2>
+
+  <div class="row">
+    <div class="col-md-3">
+      <strong>Teaching:</strong> 0 min
+      <br/>
+      <strong>Exercises:</strong> 0 min
+    </div>
+    <div class="col-md-9">
+      <strong>Questions</strong>
+      <ul>
+	
+	<li><p>How do I download CESM?</p>
+</li>
+	
+      </ul>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-3">
+    </div>
+    <div class="col-md-9">
+      <strong>Objectives</strong>
+      <ul>
+	
+      </ul>
+    </div>
+  </div>
+
+</blockquote>
+
+<p>We will now download the model and all the setup files needed for it. These are one-time steps.</p>
+
+<p>Go to your <code class="language-plaintext highlighter-rouge">/glade/work/</code> directory</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">cd</span> /glade/work/kpegion
+</code></pre></div></div>
+
+<p>Download the CESM from Github</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>git clone –b release-cesm2.1.1 https://github.com/ESCOMP/cesm.git cesm2.1.1 
+</code></pre></div></div>
+
+<p>Change to the <code class="language-plaintext highlighter-rouge">cesm2.1.1</code> directory</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">cd </span>cesm2.1.1
+</code></pre></div></div>
+
+<p>Let’s take a look in that directory and talk about what is there and what is not.
+Need to get the model components.</p>
+
+<p>Checkout all the model components</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>./manage_externals/checkout_externals
+</code></pre></div></div>
+
+<p>Sometimes this hangs and gives an error about connecting.  If it does, try again. If it asks you a question about the certificate, you can select <code class="language-plaintext highlighter-rouge">p</code> for permanent.</p>
+
+<p>Leave this running over break.</p>
+
+
+
+
+
+<blockquote class="keypoints">
+  <h2>Key Points</h2>
+  <ul>
+    
+  </ul>
+</blockquote>
 
 </article>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+<div class="row">
+  <div class="col-xs-1">
+    <h3 class="text-left">
+      
+      <a href="../03-NCAR-Computing-Environment/index.html"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span><span class="sr-only">previous episode</span></a>
+      
+    </h3>
+  </div>
+  <div class="col-xs-10">
+    
+  </div>
+  <div class="col-xs-1">
+    <h3 class="text-right">
+      
+      <a href="../05-CESM-Quickstart/index.html"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span><span class="sr-only">next episode</span></a>
+      
+    </h3>
+  </div>
+</div>
+
 
       
       

@@ -19,7 +19,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta http-equiv="last-modified" content="2020-08-30 16:10:15 -0600">
+    <meta http-equiv="last-modified" content="2020-09-14 18:50:43 -0600">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- meta "search-domain" used for google site search function google_search() -->
     <meta name="search-domain" value="">
@@ -47,7 +47,7 @@
     <link rel="icon" type="image/png" href="../assets/favicons/swc/favicon-32x32.png" sizes="32x32" />
     <link rel="icon" type="image/png" href="../assets/favicons/swc/favicon-16x16.png" sizes="16x16" />
     <link rel="icon" type="image/png" href="../assets/favicons/swc/favicon-128.png" sizes="128x128" />
-    <meta name="application-name" content="Software Carpentry - Class Project & Finding Things in Unix"/>
+    <meta name="application-name" content="Software Carpentry - NCAR and CESM Introduction"/>
     <meta name="msapplication-TileColor" content="#FFFFFF" />
     <meta name="msapplication-TileImage" content="../assets/favicons/swc/mstile-144x144.png" />
     <meta name="msapplication-square70x70logo" content="../assets/favicons/swc/mstile-70x70.png" />
@@ -64,7 +64,7 @@
 	<![endif]-->
 
   <title>
-  Class Project &ndash; Class Project & Finding Things in Unix
+  The NCAR Computing Environment &ndash; NCAR and CESM Introduction
   </title>  
 
   </head>
@@ -131,10 +131,19 @@
           <ul class="dropdown-menu">
             
             
-            <li><a href="../01-Class-Project/index.html">Class Project</a></li>
+            <li><a href="../01-Two-Models/index.html">CESM and UFS</a></li>
             
             
-            <li><a href="../02-find/index.html">Finding Things</a></li>
+            <li><a href="../02-CESM-Configuration/index.html">CESM Workflow</a></li>
+            
+            
+            <li><a href="../03-NCAR-Computing-Environment/index.html">The NCAR Computing Environment</a></li>
+            
+            
+            <li><a href="../04-Downloading-CESM/index.html">Downloading CESM</a></li>
+            
+            
+            <li><a href="../05-CESM-Quickstart/index.html">CESM Quickstart</a></li>
             
 	    <li role="separator" class="divider"></li>
             <li><a href="../aio/index.html">All in one page (Beta)</a></li>
@@ -218,19 +227,19 @@
   <div class="col-xs-1">
     <h3 class="text-left">
       
-      <a href="../"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span><span class="sr-only">lesson home</span></a>
+      <a href="../02-CESM-Configuration/index.html"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span><span class="sr-only">previous episode</span></a>
       
     </h3>
   </div>
   <div class="col-xs-10">
     
-    <h3 class="maintitle"><a href="../">Class Project & Finding Things in Unix</a></h3>
+    <h3 class="maintitle"><a href="../">NCAR and CESM Introduction</a></h3>
     
   </div>
   <div class="col-xs-1">
     <h3 class="text-right">
       
-      <a href="../02-find/index.html"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span><span class="sr-only">next episode</span></a>
+      <a href="../04-Downloading-CESM/index.html"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span><span class="sr-only">next episode</span></a>
       
     </h3>
   </div>
@@ -241,7 +250,7 @@
   <div class="col-md-1">
   </div>
   <div class="col-md-10">
-    <h1 class="maintitle">Class Project</h1>
+    <h1 class="maintitle">The NCAR Computing Environment</h1>
   </div>
   <div class="col-md-1">
   </div>
@@ -263,15 +272,15 @@
 
   <div class="row">
     <div class="col-md-3">
-      <strong>Teaching:</strong>  min
+      <strong>Teaching:</strong> 0 min
       <br/>
-      <strong>Exercises:</strong>  min
+      <strong>Exercises:</strong> 0 min
     </div>
     <div class="col-md-9">
       <strong>Questions</strong>
       <ul>
 	
-	<li><p>What is this semester project?</p>
+	<li><p>How do I use the NCAR Computers?</p>
 </li>
 	
       </ul>
@@ -285,34 +294,43 @@
       <strong>Objectives</strong>
       <ul>
 	
-	<li><p>Start thinking about the topic for your semester project</p>
-</li>
-	
       </ul>
     </div>
   </div>
 
 </blockquote>
 
-<h3 id="description-of-project">Description of Project</h3>
-<p>In this class, you will learn to perform hypothesis driven experiments with an Earth System Model.  You will complete a class project that involves application of the skills from this class to your own model experiments.  The project will consist of:</p>
+<p>You have now have accounts on the NCAR computers <code class="language-plaintext highlighter-rouge">cheyenne.ucar.edu</code> and <code class="language-plaintext highlighter-rouge">casper.ucar.edu</code>.</p>
 
-<ul>
-  <li>A written paper describing your scientific question, hypothesis, experiment design, and results.</li>
-  <li>An oral presentation to the class describing the project</li>
-</ul>
+<p>Login to <code class="language-plaintext highlighter-rouge">cheyenne</code></p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>ssh <span class="nt">-X</span> <span class="nt">-l</span> username cheyenne.ucar.edu
+</code></pre></div></div>
 
-<p>You may perform proof-of-concept experiments on a scientific question related to your graduate research and/or interests  or you may reproduce the results from a journal article in which experiments were performed using climate model.  You should use CESM for your experiments.</p>
+<p>Follow the instructions you received regarding Duo 2-factor authentication</p>
 
-<blockquote class="discussion">
-  <h2 id="start-thinking-about-your-scientific-question">Start Thinking about your scientific question</h2>
+<p><img src="../fig/Cheyenne.png" alt="Cheyenne" /></p>
 
-  <p>What scientific topic would you like to explore?</p>
+<p>Cheyenne is a supercomputer, but to the user it is just like any Unix computer and we run the same Unix commands here.</p>
 
-  <p>Which type of experiment appeals to you and why?</p>
+<blockquote class="challenge">
+  <h2 id="your-home-directory-on-ncar">Your home directory on NCAR</h2>
+
+  <p>Use the <code class="language-plaintext highlighter-rouge">pwd</code> command to see what your home directory is called.</p>
 
 </blockquote>
 
+<p>To run a model we will need disk space beyond just our home directory.  By default, with your NCAR account, you have space in your home directory, a temporary space called <code class="language-plaintext highlighter-rouge">/scratch</code> and a <code class="language-plaintext highlighter-rouge">work</code> directory all under a system called the GLADE shared file system.  How do I know what directories I have and how much space is available?</p>
+
+<blockquote class="challenge">
+  <h2 id="your-disk-space-on-glade">Your disk space on glade</h2>
+
+  <p>Use the <code class="language-plaintext highlighter-rouge">gladequota</code> command to see</p>
+
+  <p>Note that only the home directory is backed up.</p>
+
+</blockquote>
+
+<p><img src="../fig/GLADE.png" alt="Cheyenne" /></p>
 
 
 
@@ -321,9 +339,6 @@
 <blockquote class="keypoints">
   <h2>Key Points</h2>
   <ul>
-    
-    <li><p>A semester project is required for this course</p>
-</li>
     
   </ul>
 </blockquote>
@@ -373,7 +388,7 @@
   <div class="col-xs-1">
     <h3 class="text-left">
       
-      <a href="../"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span><span class="sr-only">lesson home</span></a>
+      <a href="../02-CESM-Configuration/index.html"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span><span class="sr-only">previous episode</span></a>
       
     </h3>
   </div>
@@ -383,7 +398,7 @@
   <div class="col-xs-1">
     <h3 class="text-right">
       
-      <a href="../02-find/index.html"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span><span class="sr-only">next episode</span></a>
+      <a href="../04-Downloading-CESM/index.html"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span><span class="sr-only">next episode</span></a>
       
     </h3>
   </div>

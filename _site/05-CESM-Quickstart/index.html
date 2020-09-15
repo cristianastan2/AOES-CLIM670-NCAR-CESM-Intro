@@ -64,7 +64,7 @@
 	<![endif]-->
 
   <title>
-  NCAR and CESM Introduction
+  CESM Quickstart &ndash; NCAR and CESM Introduction
   </title>  
 
   </head>
@@ -198,104 +198,74 @@
 
 
 
-<h1 class="maintitle"><a href="../index.html">NCAR and CESM Introduction</a></h1>
 
 
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+<div class="row">
+  <div class="col-xs-1">
+    <h3 class="text-left">
+      
+      <a href="../04-Downloading-CESM/index.html"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span><span class="sr-only">previous episode</span></a>
+      
+    </h3>
+  </div>
+  <div class="col-xs-10">
+    
+    <h3 class="maintitle"><a href="../">NCAR and CESM Introduction</a></h3>
+    
+  </div>
+  <div class="col-xs-1">
+    <h3 class="text-right">
+      
+      <a href="../"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span><span class="sr-only">lesson home</span></a>
+      
+    </h3>
+  </div>
+</div>
 
 <article>
-
-<h1 id="cesm-and-ufs" class="maintitle">CESM and UFS</h1>
-
-<blockquote class="objectives">
-  <h2>Overview</h2>
-
-  <div class="row">
-    <div class="col-md-3">
-      <strong>Teaching:</strong>  min
-      <br />
-      <strong>Exercises:</strong>  min
-    </div>
-    <div class="col-md-9">
-      <strong>Questions</strong>
-      <ul>
-	
-	<li><p>What is CESM?</p>
-</li>
-	
-	<li><p>How does it differ from UFS?</p>
-</li>
-	
-	<li><p>Why do we use CESM in this class?</p>
-</li>
-	
-      </ul>
-    </div>
+<div class="row">
+  <div class="col-md-1">
   </div>
-
-  <div class="row">
-    <div class="col-md-3">
-    </div>
-    <div class="col-md-9">
-      <strong>Objectives</strong>
-      <ul>
-	
-	<li><p>Understand the differences between these two models</p>
-</li>
-	
-	<li><p>Learn about CESM</p>
-</li>
-	
-      </ul>
-    </div>
+  <div class="col-md-10">
+    <h1 class="maintitle">CESM Quickstart</h1>
   </div>
+  <div class="col-md-1">
+  </div>
+</div>
 
-</blockquote>
 
-<p>Last week you learned about the NOAA/Unified Forecast System from Dr. Stan.  Today we will learn about the NCAR/Community Earth System Model. How would you know which model you want to yuse for your work?  Here are some pros/cons of each model?</p>
 
-<h3 id="noaaunified-forecast-system-ufs">NOAA/Unified Forecast System (UFS) </h3>
-<ul>
-  <li>UFS is not yet easy to run for research purposes</li>
-  <li>Challenging to modify for a specific purpose, but this will improve in the future – concerted effort to document and provide community support</li>
-  <li>The “public release” version is only the Atm &amp; Land components, although experimental unsupported atm-land-ocn versions exist.</li>
-  <li>Existing, publicly available experiments consist of Atm/Land model re-forecasts and real-time forecasts</li>
-  <li>Its primary mission is centered around prediction</li>
-  <li>Componenets consist of Atm, Land, Ocn, Sea Ic, Aerosol, Ionosphere, Storm Surge, Waves</li>
-  <li>Using the UFS for research has the potential to directly feedback to improving operational predictions.</li>
-  <li>Several people in AOES work with this model as a research tool (e.g. Stan, Cash, Kinter)</li>
-</ul>
 
-<p><img src="../fig/UFSComponents.png" alt="UFS" /></p>
 
-<h3 id="ncarcommunity-earth-system-model-cesm">NCAR/Community Earth System Model (CESM)</h3>
-<ul>
-  <li>Designed for community use – easy to use for research</li>
-  <li>Large community of people working with CESM – Organized in working groups (open to all) http://www.cesm.ucar.edu/working_groups/</li>
-  <li>Easy to get help, lots of documentation: http://www.cesm.ucar.edu/</li>
-  <li>CESM has different (and more) Earth system components</li>
-  <li>Many components can be combined together in endless combinations</li>
-  <li>Easy to change configuration (e.g. output frequency, grid).</li>
-  <li>Primary mission is climate oriented</li>
-  <li>Many existing climate simulations and now hindcasts (CMIP, large ensemble, decadal prediction, S2S prediction)</li>
-  <li>More recently starting to be used for prediction/predictability purposes (e.g. new Earth System Prediction Working Group).</li>
-  <li>Lots of people in AOES work with this model.</li>
-</ul>
 
-<p><img src="../fig/CESMComponents.png" alt="CESM" /></p>
 
-<blockquote class="keypoints">
-  <h2>Key Points</h2>
-  <ul>
-    
-    <li>
-</li>
-    
-  </ul>
-</blockquote>
 
-<hr />
 
-<h1 id="cesm-workflow" class="maintitle">CESM Workflow</h1>
+
+
 
 <blockquote class="objectives">
   <h2>Overview</h2>
@@ -303,214 +273,7 @@
   <div class="row">
     <div class="col-md-3">
       <strong>Teaching:</strong> 0 min
-      <br />
-      <strong>Exercises:</strong> 0 min
-    </div>
-    <div class="col-md-9">
-      <strong>Questions</strong>
-      <ul>
-	
-	<li><p>What is the CESM Workflow?</p>
-</li>
-	
-      </ul>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col-md-3">
-    </div>
-    <div class="col-md-9">
-      <strong>Objectives</strong>
-      <ul>
-	
-      </ul>
-    </div>
-  </div>
-
-</blockquote>
-
-<p>The NCAR/CESM consists of many component models which are their own software programs.  These models talk to each other through another piece of software called a coupler. There is yet even another software system, called the Workflow.  It allows use to select various model components and configurations for our experiments.</p>
-
-<p><img src="../fig/CESMCoupling.png" alt="CESMCoupling" /></p>
-
-<h3 id="workflow">Workflow</h3>
-
-<p>The workflow used by CESM is called the Coupling Infrastructure for Modeling Earth (CIME).  It includes:</p>
-<ul>
-  <li>Coupling infrastructure (how do the components talk to each other)</li>
-  <li>Data and stub models (structure to allow componenets to be active or inactive)</li>
-  <li>Testing infrastructure</li>
-  <li>Python scripts and XML configuration files for the Case control system (this is what is important to us for running the model)</li>
-</ul>
-
-<p><img src="../fig/CIME.png" alt="CIME" /></p>
-
-<p>CIME is being used by other modeling groups, so learning how to configure and run the CESM using CIME may translate to being able to work with other models.</p>
-
-<blockquote class="keypoints">
-  <h2>Key Points</h2>
-  <ul>
-    
-  </ul>
-</blockquote>
-
-<hr />
-
-<h1 id="the-ncar-computing-environment" class="maintitle">The NCAR Computing Environment</h1>
-
-<blockquote class="objectives">
-  <h2>Overview</h2>
-
-  <div class="row">
-    <div class="col-md-3">
-      <strong>Teaching:</strong> 0 min
-      <br />
-      <strong>Exercises:</strong> 0 min
-    </div>
-    <div class="col-md-9">
-      <strong>Questions</strong>
-      <ul>
-	
-	<li><p>How do I use the NCAR Computers?</p>
-</li>
-	
-      </ul>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col-md-3">
-    </div>
-    <div class="col-md-9">
-      <strong>Objectives</strong>
-      <ul>
-	
-      </ul>
-    </div>
-  </div>
-
-</blockquote>
-
-<p>You have now have accounts on the NCAR computers <code class="language-plaintext highlighter-rouge">cheyenne.ucar.edu</code> and <code class="language-plaintext highlighter-rouge">casper.ucar.edu</code>.</p>
-
-<p>Login to <code class="language-plaintext highlighter-rouge">cheyenne</code></p>
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>ssh <span class="nt">-X</span> <span class="nt">-l</span> username cheyenne.ucar.edu
-</code></pre></div></div>
-
-<p>Follow the instructions you received regarding Duo 2-factor authentication</p>
-
-<p><img src="../fig/Cheyenne.png" alt="Cheyenne" /></p>
-
-<p>Cheyenne is a supercomputer, but to the user it is just like any Unix computer and we run the same Unix commands here.</p>
-
-<blockquote class="challenge">
-  <h2 id="your-home-directory-on-ncar">Your home directory on NCAR</h2>
-
-  <p>Use the <code class="language-plaintext highlighter-rouge">pwd</code> command to see what your home directory is called.</p>
-
-</blockquote>
-
-<p>To run a model we will need disk space beyond just our home directory.  By default, with your NCAR account, you have space in your home directory, a temporary space called <code class="language-plaintext highlighter-rouge">/scratch</code> and a <code class="language-plaintext highlighter-rouge">work</code> directory all under a system called the GLADE shared file system.  How do I know what directories I have and how much space is available?</p>
-
-<blockquote class="challenge">
-  <h2 id="your-disk-space-on-glade">Your disk space on glade</h2>
-
-  <p>Use the <code class="language-plaintext highlighter-rouge">gladequota</code> command to see</p>
-
-  <p>Note that only the home directory is backed up.</p>
-
-</blockquote>
-
-<p><img src="../fig/GLADE.png" alt="Cheyenne" /></p>
-
-<blockquote class="keypoints">
-  <h2>Key Points</h2>
-  <ul>
-    
-  </ul>
-</blockquote>
-
-<hr />
-
-<h1 id="downloading-cesm" class="maintitle">Downloading CESM</h1>
-
-<blockquote class="objectives">
-  <h2>Overview</h2>
-
-  <div class="row">
-    <div class="col-md-3">
-      <strong>Teaching:</strong> 0 min
-      <br />
-      <strong>Exercises:</strong> 0 min
-    </div>
-    <div class="col-md-9">
-      <strong>Questions</strong>
-      <ul>
-	
-	<li><p>How do I download CESM?</p>
-</li>
-	
-      </ul>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col-md-3">
-    </div>
-    <div class="col-md-9">
-      <strong>Objectives</strong>
-      <ul>
-	
-      </ul>
-    </div>
-  </div>
-
-</blockquote>
-
-<p>We will now download the model and all the setup files needed for it. These are one-time steps.</p>
-
-<p>Go to your <code class="language-plaintext highlighter-rouge">/glade/work/</code> directory</p>
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">cd</span> /glade/work/kpegion
-</code></pre></div></div>
-
-<p>Download the CESM from Github</p>
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>git clone –b release-cesm2.1.1 https://github.com/ESCOMP/cesm.git cesm2.1.1 
-</code></pre></div></div>
-
-<p>Change to the <code class="language-plaintext highlighter-rouge">cesm2.1.1</code> directory</p>
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">cd </span>cesm2.1.1
-</code></pre></div></div>
-
-<p>Let’s take a look in that directory and talk about what is there and what is not.
-Need to get the model components.</p>
-
-<p>Checkout all the model components</p>
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>./manage_externals/checkout_externals
-</code></pre></div></div>
-
-<p>Sometimes this hangs and gives an error about connecting.  If it does, try again. If it asks you a question about the certificate, you can select <code class="language-plaintext highlighter-rouge">p</code> for permanent.</p>
-
-<p>Leave this running over break.</p>
-
-<blockquote class="keypoints">
-  <h2>Key Points</h2>
-  <ul>
-    
-  </ul>
-</blockquote>
-
-<hr />
-
-<h1 id="cesm-quickstart" class="maintitle">CESM Quickstart</h1>
-
-<blockquote class="objectives">
-  <h2>Overview</h2>
-
-  <div class="row">
-    <div class="col-md-3">
-      <strong>Teaching:</strong> 0 min
-      <br />
+      <br/>
       <strong>Exercises:</strong> 0 min
     </div>
     <div class="col-md-9">
@@ -716,6 +479,10 @@ $ ls
 
 <p>While we are away, our model will run.  We will return next week to take a look!</p>
 
+
+
+
+
 <blockquote class="keypoints">
   <h2>Key Points</h2>
   <ul>
@@ -723,10 +490,67 @@ $ ls
   </ul>
 </blockquote>
 
-<hr />
-
-
 </article>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+<div class="row">
+  <div class="col-xs-1">
+    <h3 class="text-left">
+      
+      <a href="../04-Downloading-CESM/index.html"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span><span class="sr-only">previous episode</span></a>
+      
+    </h3>
+  </div>
+  <div class="col-xs-10">
+    
+  </div>
+  <div class="col-xs-1">
+    <h3 class="text-right">
+      
+      <a href="../"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span><span class="sr-only">lesson home</span></a>
+      
+    </h3>
+  </div>
+</div>
+
 
       
       
