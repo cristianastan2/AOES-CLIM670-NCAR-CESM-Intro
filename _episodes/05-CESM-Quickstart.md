@@ -67,7 +67,7 @@ $ cd /glade/work/kpegion/cesm2.1.1/cime/scripts
 
 Create a new case
 ~~~
-$ ./create_newcase --cases ~/cases/b.day1.0 --res f19_g17 --compset B1850 --project UGMU0032
+$ ./create_newcase --case ~/cases/b.day1.0 --res f19_g17 --compset B1850 --project UGMU0032
 ~~~
 {: .language-bash}
 
@@ -79,7 +79,7 @@ $ cd ~/cases/b.day1.0
 
 Setup the case
 ~~~
-$ ./case_setup
+$ ./case.setup
 ~~~
 {: .language-bash}
 
