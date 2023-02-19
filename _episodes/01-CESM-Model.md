@@ -1,5 +1,5 @@
 ---
-title: "Thee NCAR Earth System Model"
+title: "The NCAR Earth System Model"
 questions:
 - "What is CESM?"
 - "How does it differ from other Earth system models?"
