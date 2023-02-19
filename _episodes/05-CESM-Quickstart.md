@@ -67,7 +67,7 @@ $ cd /glade/work/cstan/cesm2.1.3/cime/scripts
 
 Create a new case
 ~~~
-$ ./create_newcase --case ~/cases/b.day1.0 --res f19_g17 --compset B1850 --project UGMU0032
+$ ./create_newcase --case ~/cases/b.day1.0 --res f19_g17 --compset B1850 --project UGMU0041
 ~~~
 {: .language-bash}
 
