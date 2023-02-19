@@ -18,13 +18,13 @@ $ cd /glade/work/cstan
 
 Download the CESM from Github
 ~~~
-$ git clone -b release-cesm2.1.1 https://github.com/ESCOMP/cesm.git cesm2.1.1 
+$ git clone -b release-cesm2.1.3 https://github.com/ESCOMP/cesm.git cesm2.1.3 
 ~~~
 {: .language-bash}
 
-Change to the `cesm2.1.1` directory
+Change to the `cesm2.1.3` directory
 ~~~
-$ cd cesm2.1.1
+$ cd cesm2.1.3
 ~~~
 {: .language-bash}
 
