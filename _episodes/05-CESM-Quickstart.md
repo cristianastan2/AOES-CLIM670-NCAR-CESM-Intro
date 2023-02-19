@@ -175,7 +175,7 @@ The selected compset determines which grids are available.
 This was created when you ran `create_newcase`. Change directory and take a look at it:
 
 ~~~
-$ cd ~/b.day1.0
+$ cd ~/cases/b.day1.0
 $ ls
 ~~~
 It contains a bunch of `.xml` files which are configuration files.  We will learn how to modify them next week.
