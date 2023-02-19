@@ -61,7 +61,7 @@ Above were the one-time setup setps, now we move on to the steps you will do eve
 
 Go into the scripts subdirectory in your `CIMEROOT`
 ~~~
-$ cd /glade/work/kpegion/cesm2.1.1/cime/scripts
+$ cd /glade/work/cstan/cesm2.1.1/cime/scripts
 ~~~
 {: .language-bash}
 
