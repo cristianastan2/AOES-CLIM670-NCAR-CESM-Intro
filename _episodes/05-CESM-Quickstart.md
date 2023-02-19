@@ -8,7 +8,7 @@ objectives:
 keypoints:
 ---
 You have now downloaded all the model components and the CIME workflow. Let's take a look:
-From your `/glade/work/username/cesm2.1.1` directory, see what is there.
+From your `/glade/work/username/cesm2.1.3` directory, see what is there.
 ~~~
 $ ls
 ~~~
@@ -61,7 +61,7 @@ Above were the one-time setup setps, now we move on to the steps you will do eve
 
 Go into the scripts subdirectory in your `CIMEROOT`
 ~~~
-$ cd /glade/work/cstan/cesm2.1.1/cime/scripts
+$ cd /glade/work/cstan/cesm2.1.3/cime/scripts
 ~~~
 {: .language-bash}
 
@@ -96,7 +96,7 @@ This will take awhile.  While the model is compiling, we will talk about what th
 >
 > Some users received an error indicating that their account was overspent or expired. This happened to users who already had a NCAR account associated with a project charge code that was no longer available.  To resolve this, set the `PBS_ACCOUNT` environment variable to a valid charge code for this class.
 > ~~~
-> $ export PBS_ACCOUNT=UGMU0032
+> $ export PBS_ACCOUNT=UGMU0041
 > ~~~
 > {: .language-bash}
 > This setting will go away after you logout, so you will need to set it everytime for the correct project charge code associated with the project you are working on. 
