@@ -12,7 +12,7 @@ We will now download the model and all the setup files needed for it. These are 
 
 Go to your `/glade/work/` directory 
 ~~~
-$ cd /glade/work/kpegion
+$ cd /glade/work/cstan
 ~~~
 {: .language-bash}
 
