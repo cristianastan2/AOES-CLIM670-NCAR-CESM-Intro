@@ -19,7 +19,7 @@ $ ssh -X -l username derecho.hpc.ucar.edu
 Follow the instructions you received regarding Duo 2-factor authentication
 
 
-![Derecho](../fig/Derech0.png)
+![Derecho](../fig/Derech0.jpg)
 
 Derecho is a supercomputer, but to the user it is just like any Unix computer and we run the same Unix commands here.
 
