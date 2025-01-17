@@ -10,9 +10,10 @@ keypoints:
 
 You have now have accounts on the NCAR computers `derecho.hpc.ucar.edu` and `casper.ucar.edu`.  
 
-Login to `derecho` 
+Login to `derecho` or `casper`
 ~~~
 $ ssh -X -l username derecho.hpc.ucar.edu
+$ ssh -X -l username casper.hpc.ucar.edu
 ~~~
 {: .language-bash}
 
