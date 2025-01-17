@@ -8,20 +8,20 @@ objectives:
 keypoints:
 ---
 
-You have now have accounts on the NCAR computers `cheyenne.ucar.edu` and `casper.ucar.edu`.  
+You have now have accounts on the NCAR computers `derecho.hpc.ucar.edu` and `casper.ucar.edu`.  
 
-Login to `cheyenne` 
+Login to `derecho` 
 ~~~
-$ ssh -X -l username cheyenne.ucar.edu
+$ ssh -X -l username derecho.hpc.ucar.edu
 ~~~
 {: .language-bash}
 
 Follow the instructions you received regarding Duo 2-factor authentication
 
 
-![Cheyenne](../fig/Cheyenne.png)
+![Derecho](../fig/Derecho.png)
 
-Cheyenne is a supercomputer, but to the user it is just like any Unix computer and we run the same Unix commands here.
+Derecho is a supercomputer, but to the user it is just like any Unix computer and we run the same Unix commands here.
 
 > ## Your home directory on NCAR 
 >
