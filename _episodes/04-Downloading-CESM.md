@@ -41,7 +41,7 @@ Sometimes this hangs and gives an error about connecting.  If it does, try again
 
 ~~~
 ## Warning
-If a problem was encountered during checkout_externals, which may happen with an older version of the svn client software, it may appear to have downloaded successfully, but in fact only a partial checkout has occurred.
+> If a problem was encountered during checkout_externals, which may happen with an older version of the svn client software, it may appear to have downloaded successfully, but in fact only a partial checkout has occurred.
 ~~~
 {: .callout}
 
